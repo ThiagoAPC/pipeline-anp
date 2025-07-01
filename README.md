@@ -1,4 +1,4 @@
-# Projeto: Análise de Preços de Produtos com Dados Públicos
+# Projeto: Pipeline de Extração do PIB do Brasil por ano via API
 
 Este projeto demonstra um pipeline completo de engenharia de dados utilizando Python, Airflow e Metabase, com dados reais extraídos da API pública da ANP (Agência Nacional do Petróleo) e do Banco Mundial.
 
