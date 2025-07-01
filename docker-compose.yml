@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  airflow:
+    image: puckel/docker-airflow
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./airflow/dags:/usr/local/airflow/dags
+
+  metabase:
+    image: metabase/metabase
+    ports:
+      - '3000:3000'
+    volumes:
+      - metabase-data:/metabase-data
+      - /mnt/c/Users/Usuario/Desktop/projeto_dados/data/processed:/data
+
+volumes:
+  metabase-data:
